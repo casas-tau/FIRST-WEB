@@ -1,0 +1,174 @@
+:root{
+    --vey-light-pink:#C7C7C7;
+    --black:#000000;
+    --withe:#FFFFFF;
+    --Hospital-green:#ACD9B2;
+    --Text-input-field:#F7F7F7;
+    --green-shadows:#64b177;
+    --dark:#232830;
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}  
+
+@media (max-width: 640px) {
+    .logo {
+        display: block !important;
+    }
+}
+
+/* CHANGE PASSWORD */
+
+body{
+    margin:0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container-formulario{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    padding:35px;
+    background-color: var(--withe);
+    border-radius:60px;
+    box-shadow:0 10px 500px rgba(100, 177, 119, 0.8);
+}
+
+.logo{
+    justify-self:center;
+    width: 200px;
+    margin:20px;
+    display:none;
+}
+
+.title{
+    font-size:var(--lg);
+    text-align:center;
+    margin-bottom:21px;
+}
+
+.subtitulo{
+    color:var(--dark);
+    font-size:var(--md);
+    text-align: center;
+    font-weight:350;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction:column;
+}
+
+.label{
+    font-size:var(--sm);
+    font-weight: 800;
+    margin-bottom:4px;
+    color: #61b66c;
+}
+
+.input{
+    background-color:#64b17721;
+    border:none;
+    border-radius: 10px;
+    height:100;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.primary-button{
+    background-color:var(--Hospital-green);
+    border-radius:100px;
+    border:none;
+    color: var(--withe);
+    width:100%;
+    cursor: pointer;
+    font-size:var(--md);
+    font-weight: bold;
+    height:50px;
+
+}
+.login-button{
+    margin-top:15px ;
+    margin-bottom:2px;
+} 
+
+ 
+
+/* RESTORE PASWORD EMAIL SECTION */
+
+.email-imagen{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 24px;
+    background-color:var(--Text-input-field);
+    border-radius: 10px;
+    height: 132px;
+    width: 132px;
+}
+
+.resend{
+    font-size:var(--sm);
+}
+
+.resend span{
+    color: var(--vey-light-pink);
+    font-weight:bold;
+}
+
+.resend a {
+    color: var(--green-shadows);
+    text-decoration: none;
+    font-weight:bold;
+}
+
+/* LOGIN PAGE*/
+
+.formulario a{
+    color: var(--green-shadows);
+    font-size: var(--sm);
+    font-weight:bold;
+    text-decoration:none;
+    text-align: center;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
+.secondary-button{
+    background-color:var(--Text-input-field);
+    border-radius:5px;
+    border:var(--green-shadows) 1px solid;
+    color: var(--green-shadows);
+    width:100%;
+    cursor: pointer;
+    font-size:var(--md);
+    font-weight: bold;
+    height:50px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.input-email{
+    margin-bottom:20px;
+}
+
+/* CREATE/EDIT ACCOUNT */
+
+.input-name,
+.input-email-account,
+.input-password-account{
+    margin-bottom:22px;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction:column;
+}
